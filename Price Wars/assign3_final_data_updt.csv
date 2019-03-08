@@ -1,0 +1,114 @@
+,Product,Brand,CP,WP,Unit,Aisle,priceDiff (WP-CP)
+1,Listerine,Mouthwash,4.7,4.7,250ml,Dental,0
+2,Addidas,Deodrant action 3 blue,5,5,200ml,Cosmetics,0
+3,Johnson's,Baby Powder,4.52,4.2,400g,Baby,-0.32
+4,Nestle,Cerelac stage2,4.6,4.26,200g,Baby,-0.34
+5,Colgate,Total paste advanced fresh,4,4.04,110g,Dental,0.04
+6,Sorbent,Silky White tissue,0.75,0.75,100ea,Toileteries,0
+7,Dove,Shampoo Intensive repair,6.89,7,320ml,Shampoo,0.11
+8,Dettol,Handwash Lime mint,3.5,3,250ml,Toileteries,-0.5
+9,Nivea,Body lotion normal to dry skin,5.6,5.6,400ml,Cosmetics,0
+10,Omo,Ultimate Laundry liquid,20.01,21.99,1.8L,Washing,1.98
+11,Comfort,Fabric Softeners Sky blue,6.99,6.99,800ml,Washing,0
+12,Palmolive,Green Ultra concentrate,5.49,5.49,750ml,Washing,0
+13,Fairy,Original dishwasher tablets,7,7,22pack,Dishwashing,0
+14,Chux,Superwipes Cloth regular,4,3.99,10pack,Dishwashing,-0.01
+15,Dettol,Laundry sanitizer,8.9,NA,1.25L,Washing,NA
+16,Vanish,Pure Gold stain remover,5.49,5.49,375ml,Washing,0
+17,Mortein,Fly spray fast knockdown,7.7,5.5,300g,Air Freshener,-2.2
+18,Ambi Pur,Fresherener  air effect My relax,5.99,6,275g,Air Freshener,0.01
+19,Dettol,Dsinfectant wipes,4,4,45pack,Toileteries,0
+20,Kiwi,Shoe polish black,4,3.39,38g,Cleaner,-0.61
+21,Vileda,Brush dish round,4.7,NA,ea,Toileteries,NA
+22,Vileda,Brush Super round,4,NA,ea,Toileteries,NA
+23,Freedom,Carpet Foam cleaner,6.69,8.25,500g,Cleaner,1.56
+24,Multix,Garbage Bags 50Value Pack,7.93,7.93,50pack,Cleaner,0
+25,Sorbent,Toilet rolls,8.75,NA,,Toileteries,NA
+26,Pedigree,Vital protection 1-7 years,10.8,10.8,3kg,Dog Food,0
+27,4leg,"Dog Food beef,  macroni, vegetables",5.8,5.79,900g,Dog Food,-0.01
+28,Kleenex,complete clean toilet tissue,NA,NA,,Toileteries,NA
+29,Grillman,Aluminium Trays med,4,NA,3pack,Cookery,NA
+30,Vilapet,Puppy Pee pads,8.6,NA,7pack,Dog Food,NA
+31,Oates,Mop ezy squeeze antibacterial,13.9,NA,ea,Cleaner,NA
+32,Oates,Mop Head large,10.6,NA,ea,Cleaner,NA
+33,Oral B,Precision gum care brush,6,6,ea,Dental,0
+34,Oral B,Compact gum care brush,6,6,ea,Dental,0
+35,Band aid,Touch stripes 20,2.85,2,20pack,Medicine,-0.85
+36,Nicorette,Classic gum 4mg 75pack,29,29,75pack,Medicine,0
+37,Alfredo pasta sauce,leggos,3,3,500 gms,Rice/Pasta/Canned Vegetable,0
+38,zafarelli spaghetti,zafarelli,1.95,1.94,500 g,Rice/Pasta/Canned Vegetable,-0.01
+39,basmati rice,sunrice,4.2,4.2,1 kg,Rice/Pasta/Canned Vegetable,0
+40,chick peas,edgell,1,1.78,400 gm,Rice/Pasta/Canned Vegetable,0.78
+41,garden peas,edgell,1.09,1.14,220 gm,Rice/Pasta/Canned Vegetable,0.05
+42,olives mixed,always fresh,5,5,220 gm,Rice/Pasta/Canned Vegetable,0
+43,Jasmine long grain rice,sunrice,3.2,3.2,1 kg,Rice/Pasta/Canned Vegetable,0
+44,high fibre large spirals,vetta,2,2,500 gms,Rice/Pasta/Canned Vegetable,0
+45,artesian water sparkling,voss,3.05,2.4,375 ml,Drinks/Water/Chips,-0.65
+46,Nacho cheese corn chips,Doritos,3.3,3.29,170 gm,Drinks/Water/Chips,-0.01
+47,thinly cut teriyaki chicken chips,smiths,3.3,2,175 gm,Drinks/Water/Chips,-1.3
+48,original energy drink,redbull,2.85,2.85,250 ml,Drinks/Water/Chips,0
+49,energy can green,monster,3.45,3.45,500 ml,Drinks/Water/Chips,0
+50,ice tea peach,lipton,3.8,3.79,1.5 ltr,Drinks/Water/Chips,-0.01
+51,sport drink tropical fruit,Gatorade,3.4,3.5,600 ml,Drinks/Water/Chips,0.1
+52,sour cream and onion potato chips,Pringles,4,4,134 gms,Drinks/Water/Chips,0
+53,sea salt and vinegar chips,natural,3.25,3.25,175 gm,Drinks/Water/Chips,0
+54,coco cola zero,coco cola,2,2.85,1.25 ltr,Drinks/Water/Chips,0.85
+55,soda water,Schweppes,2.2,2.4,1.25 ltr,Drinks/Water/Chips,0.2
+56,Pepsi,Pepsi,2.2,2.4,1.25 ltr,Drinks/Water/Chips,0.2
+57,diet,coco cola,2,2.85,1.25 ltr,Drinks/Water/Chips,0.85
+58,cheddar cheese popcorn,cobs,3.3,2.85,100 gm,Drinks/Water/Chips,-0.45
+59,Original snacks,majans bhuja,3.85,3.85,200 gm,Drinks/Water/Chips,0
+60,spring water,evian,2.99,3.2,750 ml,Drinks/Water/Chips,0.21
+61,KitKat medium bar chocolate,Nestle,2,2,45gm,Chocolates/Biscuits/Juices,0
+62,rice crackers sour cream and chive,peckers,3,2.65,120 gm (6x20),Chocolates/Biscuits/Juices,-0.35
+63,excellence chocolate milk mint,lindt,4.25,4.25,100 gm,Chocolates/Biscuits/Juices,0
+64,milk chocolate,dairy Milk,5,5,200 gm,Chocolates/Biscuits/Juices,0
+65,chocolate collection pack(15),ferrero,7.5,12.6,172 gm,Chocolates/Biscuits/Juices,5.1
+66,original vanilla cream biscuits,Oreo,2,2,137 gm,Chocolates/Biscuits/Juices,0
+67,breakfast juice,berri,3,3,2.4 litres,Chocolates/Biscuits/Juices,0
+68,cordial lime juice,bickfords,3.85,3.85,750 ml,Chocolates/Biscuits/Juices,0
+69,mix ups,mars m&M s,4.25,4.25,145 gm,Chocolates/Biscuits/Juices,0
+70,Margherita pizza crackers,Arnott's shapes,1.5,3,190 gm,Chocolates/Biscuits/Juices,1.5
+71,chocolate sea shells,guylian,16.3,16,250 gm,Chocolates/Biscuits/Juices,-0.3
+72,Bowl noodles (seasame oil flavor),Nissin,1.95,2.068,110 gms,Sauce/Asian/Snacks,0.118
+73,Balsamic dressing,Praise ,3.5,3.5,330 ml,Sauce/Asian/Snacks,0
+74,Whole egg mayonnaise ,S&W,5.5,5.5,440 gm,Sauce/Asian/Snacks,0
+75,Red prawn crackers,Double phoenix,1.51,0.0634,200 gm,Sauce/Asian/Snacks,-1.4466
+76,Marinade honey soy garlic,Masterfoods,2.99,3.39,375 gm,Sauce/Asian/Snacks,0.4
+77,Tim Tam dark chocolate,Arnott's,3.65,3.65,200 gms,Sauce/Asian/Snacks,0
+78,Panko breadcrumbs,Obento,2.7,2.18,200 gms,Sauce/Asian/Snacks,-0.52
+79,Malaysia curry sauce,Yeo's,3.75,2.27,400 ml,Sauce/Asian/Snacks,-1.48
+80,Coconut cream,Trident,1.95,1.99,400 ml,Sauce/Asian/Snacks,0.04
+81,Sweet chilli sauce,Mae ploy,3.95,7.4825,730 ml,Sauce/Asian/Snacks,3.5325
+82,Wasabi paste,S&B,3,2.99,43 gms,Sauce/Asian/Snacks,-0.01
+83,Tomato Sauce,Master Foods,2.85,2.85,500 ml,Sauce/Asian/Snacks,0
+84,Cheese Snacks,Twisties,4,4,270 gms,Sauce/Asian/Snacks,0
+85,extra virgin oil,cobram estate,7,7,375 ml,Bread/Oil/Canned Fish,0
+86,Balsamic Vinegar,Cornwell's,4.8,6,500 ml,Bread/Oil/Canned Fish,1.2
+87,wholemeal flour,white wings,3.11,3.09,1 kg,Bread/Oil/Canned Fish,-0.02
+88,Semolina,Sostanza,4,5.16,500 gms,Bread/Oil/Canned Fish,1.16
+89,Spaghetti & Meatballs,Heinz,2.3,2.39,420 gms,Bread/Oil/Canned Fish,0.09
+90,Pink Salmon,John West (wild alaskan),5.6,5.5,415 gms,Bread/Oil/Canned Fish,-0.1
+91,Bread Grain Country,Abbotts Village Bakery,3.4,3.5,850 gms,Bread/Oil/Canned Fish,0.1
+92,Rye wraps,Simson's,2.2,3.59,180 gms,Bread/Oil/Canned Fish,1.39
+93,Pancakes,Golden,4.99,4.99,360 gms,Bread/Oil/Canned Fish,0
+94,Tuna,John west,2,2,95 gms,Bread/Oil/Canned Fish,0
+95,bournville cocoa,cadbury,5.4,5.4,250 gms,Bread/Oil/Canned Fish,0
+96,Fine dessicated coconut,Mckenzie's,2.6,2.5,250 gms,Bread/Oil/Canned Fish,-0.1
+97,Gelatine powder,Mckenzie's,3.75,3.65,100 gms,Bread/Oil/Canned Fish,-0.1
+98,Cream of Tartar,Mckenzie's,3.6,3.4,125 gms,Bread/Oil/Canned Fish,-0.2
+99,Silvered almonds,Lucky,5.85,5,110 gms,Bread/Oil/Canned Fish,-0.85
+100,Craisins (dried cranberries),ocean spray,6,6,283 gms,Bread/Oil/Canned Fish,0
+101,condensed cream of chicken,campbell's,2,1.86,420 gms,Bread/Oil/Canned Fish,-0.14
+102,vanilla cup cakes,betty crocker,5.2,5.2,450 gms,Bread/Oil/Canned Fish,0
+103,raw sugar,CSR,1.5,1.5,500 gms,Bread/Oil/Canned Fish,0
+104,table salt,saxa,2.95,2.95,750 gms,Bread/Oil/Canned Fish,0
+105,mini sweeteners,hermesetas,7.95,7.2,pack of 800,Bread/Oil/Canned Fish,-0.75
+106,Banana,General,3.5,3,1Kg,Fruits,
+107,Apple,Pink Lady,3.5,4,1Kg,Fruits,
+108,Watermelon,Seedless,2.5,2.5,1Kg,Fruits,
+109,Blueberries,General,7.9,7.9,125 gms,Fruits,
+110,Cucumber,Continental,2.5,2.5,1 each,Vegetable,
+111,Onion,French Shallot,13,13,1Kg,Vegetable,
+112,Beetroot,General,5,5,1Kg,Vegetable,
+113,Lettuce,Butter,2,2,1 each,Vegetable,

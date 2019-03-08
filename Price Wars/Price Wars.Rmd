@@ -1,0 +1,166 @@
+ ---
+title: "MATH1324 Assignment 3"
+subtitle: "Supermarket Price Wars"
+output: html_notebook
+---
+
+## Group/Individual Details
+
+* Parikshit Sreedhar (s3643796)
+* Arjun Balaji (s3629999)
+* Ravi Madhurchand Pandey (s3638787)
+
+## Executive Statement
+
+In your own words, provide a brief summary of the investigation. Explain the aim of the investigation, the procedure, sample, variables, main findings and conclusions. Write this section last after you have performed hypothesis testing. (Word count Max: 300 words) 
+
+Given a choice of retailer and budget constraint , which retailer would customers prefer to fill their basket ?
+
+We have gone to the stores (coles and Woolworths) in person and we performed stratified
+sampling. we randomly sampled within each strata.
+
+The original prices of the products were sampled.
+
+It ignores fruits and vegetables
+
+The products were matched with same unit of measurement.
+
+The variables that were taken into consideration are as follows:
+1)Product Name 2)Brand 3)COLES PRICE 4)WOOLWORTHS PRICE 5)UNIT OF MEASUREMENT
+6)AISLE
+
+There seems to be a marginal difference in prices which is negligible and customers need not be too concerned as to their choice of retailer.
+
+Structure of the data.
+
+
+## Load Packages and Data
+```{r}
+install.packages("dplyr")
+library(dplyr)
+
+setwd("C:\\Users\\Parikshit\\Desktop\\Stats_Assignment_3\\Coles_Woolworths_Prices")
+price_war<-read.csv("assign3_final_data_updt.csv")
+
+price_war<-price_war%>%select(2:7)
+price_war<-price_war[complete.cases(price_war),]
+
+##Price data for COLES
+coles<-price_war%>%select(1:3,5,6)
+coles<-mutate(coles,Store="Coles")
+names(coles)[3]<-"Price"
+
+
+
+##Price data for woolworths
+woolworths<-price_war%>%select(1:2,4:6)
+woolworths<-mutate(woolworths,Store="Woolworths")
+names(woolworths)[3]<-"Price"
+
+##Combining both the data sets
+price_war<-rbind(coles,woolworths)
+price_war$Price<-round(price_war$Price,2)
+price_war$Store<-as.factor(price_war$Store) #coercing the Store column to a factor
+
+```
+
+## Summary Statistics
+
+Use R to summarise the data from the investigation. Include an appropriate plot to help visualise the data. Describe the trend. 
+
+Table of price buckets - This is also supported by the Levene's test for homogeneity of variance conducted below.
+
+```{r}
+# This is a chunk for your summary statistics and visualisation code
+
+
+#Find the CI of mean of difference in prices
+##Calculating price bucket
+attach(price_war)
+for(i in 1:dim(price_war)[1])if(Price[i]>=0 & Price[i]<=5){
+  price_war$price_bucket[i]<-"0-5"}else if(Price[i]>5 & Price[i]<=10){
+    price_war$price_bucket[i]<-"5-10"}else if(Price[i] >10 & Price[i]<=15){
+      price_war$price_bucket[i]<-"10-15"
+}else if(Price[i] >15 & Price[i] <=20){
+  price_war$price_bucket[i]<-"15-20"
+}else if(Price[i] >20 & Price[i] <=25){
+  price_war$price_bucket[i]<-"20-25"
+}else if(Price[i] >25& Price[i] <=30){
+  price_war$price_bucket[i]<-"25-30"
+}else{price_bucket[i]<-"30-35"}
+
+detach(price_war)
+##Boxplot of the PRICE variable
+
+boxplot(price_war$Price~price_war$Store,ylab="Product Prices"
+        ,xlab="Retailer"
+        ,main="PRICE WAR\nComparison of product prices between COLES and WOOLWORTHS"
+        ,col="Green")
+
+##Histogram of Prices
+
+hist(coles$Price,col="red")
+
+hist(woolworths$Price,col="blue")
+
+table(price_war$Store)
+
+##Eventhough we have a large sample , we may want to check if our data comes
+##from a normal distribution
+##We shall examine this using a Q-Q plot
+coles<-price_war%>%filter(Store=="Coles")
+woolworths<-price_war%>%filter(Store=="Woolworths")
+coles$Price%>%qqPlot(dist="norm",main="COLES")
+woolworths$Price%>%qqPlot(dist="norm",main="WOOLWORTHS") ##There is a mild departure from normality
+
+```
+
+
+## Hypothesis Test
+
+Use R to perform an appropriate hypothesis test to determine which supermarket is the cheapest. You need to explain your choice of hypothesis test, any assumptions and the significance level. 
+
+COLES and WOOLWORTHS are independent of each other and we have a large sample.
+
+Prices of both COLES and WOOLWORTHS have the same variance.This is also verified using the Levenes test conducted below!
+
+The NULL hypothesis is that the mean difference in prices of COLES and WOOLWORTHS is zero.
+We hypothesise that the mean difference is not zero. We perform a two sample t-test at a significance level of 5%
+
+We use the p-value approach
+
+We have more than 30 data points in both the samples and hence we need not assume the normality of the price of the products of COLES and WOOLWORTHS
+
+Conduct LEVENE'S TEST
+```{r}
+##Homogeneity of Variance test
+leveneTest(Price~Store,data=price_war)
+
+##Performing two sample t-test
+t.test(price_war$Price~price_war$Store
+       ,paired=FALSE
+       ,data = price_war
+       ,var.equal=TRUE
+       ,alternative="two.sided")
+
+```
+
+## Interpretation
+
+Interpret the results of the hypothesis test by interpreting the $p$-value and confidence intervals and commenting on the statistical significance of the findings. 
+
+The test is not statistically significant. There is insufficient evidence to reject the null hypothesis. The confidence interval houses the null hypothesised value and hence the customers need not be weary of their choice of the retailer based on price point of the respective products.
+
+Both COLES' and WOOLWORTHS' product prices come from the same distribution of prices.
+
+The hypothesised mean falls within the CI of the mean of difference in prices of COLES and WOOLWORTHS
+
+## Discussion 
+
+Discuss the findings of your investigation. What did you conclude? What were the strengths and limitations of your investigation? What improvements could be made or what would you do differently next time?
+
+The limitation is with respect to sample.There are other factors that could influence the buying decision / customer footfalls.All other things remaining equal (ceteris paribus) price point is not the only factor having a bearing on the customer's choice of retailer.
+
+Consider other attributes such as brand spread offered at either of the stores , discounts , loyalty programs , location , etc..
+
+I will team up with 20 more people and refine my sample..!
